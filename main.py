@@ -13,4 +13,15 @@ class Store():
             del self.catalog[item_name]
         print(f"Товар {item_name} удален из {self.name}")
 
-    
+    def check_price(self, item_name):
+        return self.item.get(item_name)
+
+    def update_price(self, item_name, new_price):
+        if item_name in self.catalog:
+            self.catalog[item_name] = new_price
+            print(f"Для товара {item_name} обновлена в  {self.name}")
+        else:
+            print(None)
+
+
+
