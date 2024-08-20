@@ -31,6 +31,9 @@ store1.add_newitem("Кола", 80)
 store1.add_newitem("Пельмени", 200)
 store1.add_newitem("Сыр", 70)
 
+store2.add_newitem("Творог", 50)
+store3.add_newitem("Мороженое", 40)
+
 store1.delete_item("Сыр")
 print(store1.check_price("Кола"))
 store1.update_price("Пельмени", 220)
